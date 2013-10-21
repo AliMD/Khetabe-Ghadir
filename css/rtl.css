@@ -1,0 +1,14 @@
+[dir="rtl"] #afui .list li{
+  padding: 20px 10px 20px 20px;
+}
+
+[dir="rtl"] #afui .list > li > a{
+  margin: -20px -10px -20px -20px;
+  padding: 20px 10px 20px 20px;
+}
+
+[dir="rtl"] #afui .list > li > a:after{
+  right: auto;
+  left: 80px;
+  -webkit-transform: rotate(180deg);
+}
