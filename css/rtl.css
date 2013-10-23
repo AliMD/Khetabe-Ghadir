@@ -14,7 +14,6 @@
 [dir="rtl"] body div{
   font-family:'Droid Arabic Kufi',droidkufi,Verdana,Geneva,sans-serif !important;
   font-size: 15px;
-  font-weight: bold;
 }
 
 [dir="rtl"] #afui #header h1#pageTitle{
@@ -39,6 +38,18 @@
 
 [dir="rtl"] div.text_item{
   padding: 20px 15px;
-  line-height: 2.8;
+  line-height: 2.6;
   text-align: justify;
+}
+
+@media only screen and (min-width: 480px) {
+  [dir="rtl"] body div{
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  [dir="rtl"] body div{
+    font-size: 20px;
+  }
 }
