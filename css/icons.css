@@ -131,13 +131,13 @@ li .icon:before {
 .icon.question:before {
 	content: "\7a";
 }
-.icon.info:before {
+.icon.check:before {
 	content: "\7b";
 }
 .icon.error:before {
 	content: "\7c";
 }
-.icon.check:before {
+.icon.info:before {
 	content: "\7d";
 }
 .icon.minimize:before {
