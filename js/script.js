@@ -1,5 +1,3 @@
-var sounds_path = "sounds/";
-
 function onDeviceReady() {
   //use AppMobi viewport to handle device resolution differences if you want
   
@@ -31,14 +29,18 @@ $(document).ready(function(){
   window.scroll(0,0); //!
 });
 
+var
+sounds_enabled = true,
+sounds_path = "sounds/",
+section_id;
+
 function play_sound(panel){
-  var section_id = $(panel).data('section');
-  if(isNaN(section_id)) return false;
+  section_id = $(panel).data('section');
+  if(!sounds_enabled || !section_id) return false;
   AppMobi.player.startAudio(sounds_path+section_id+".mp3",false);
 }
 
 function stop_sound (panel) {
+  if(!sounds_enabled || !section_id) return false;
   AppMobi.player.stopAudio();
-
-
 }
