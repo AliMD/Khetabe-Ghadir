@@ -1,5 +1,29 @@
+@font-face{
+  font-family:'droidkufi';
+  font-style:normal;
+  font-weight:700;
+  src:url("../fonts/droidkufibold.woff") format('woff'),url("../fonts/droidkufibold.ttf") format('truetype');
+}
+@font-face{
+  font-family:'droidkufi';
+  font-style:normal;
+  font-weight:400;
+  src:url("../fonts/droidkufi.woff") format('woff'),url("../fonts/droidkufi.ttf") format('truetype');
+}
+
+[dir="rtl"] body div{
+  font-family:'Droid Arabic Kufi',droidkufi,Verdana,Geneva,sans-serif !important;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+[dir="rtl"] #afui #header h1#pageTitle{
+  line-height: 1.3;
+}
+
 [dir="rtl"] #afui .list li{
   padding: 20px 10px 20px 20px;
+  font-weight: bold;
 }
 
 [dir="rtl"] #afui .list > li > a{
@@ -9,6 +33,12 @@
 
 [dir="rtl"] #afui .list > li > a:after{
   right: auto;
-  left: 80px;
+  left: 2%; /*80px;*/
   -webkit-transform: rotate(180deg);
+}
+
+[dir="rtl"] div.text_item{
+  padding: 20px 15px;
+  line-height: 2.8;
+  text-align: justify;
 }
