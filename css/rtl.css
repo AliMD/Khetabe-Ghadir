@@ -38,8 +38,14 @@
 
 [dir="rtl"] div.text_item{
   padding: 20px 15px;
-  line-height: 2.6;
+  line-height: 2.4;
   text-align: justify;
+}
+
+[dir="rtl"] div#about div.text_item{
+  padding: 8px 0px;
+  line-height: 2;
+  text-align: center;
 }
 
 @media only screen and (min-width: 480px) {
