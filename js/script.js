@@ -38,6 +38,9 @@ function play_sound(panel){
   section_id = $(panel).data('section');
   if(!sounds_enabled || !section_id) return false;
   AppMobi.player.startAudio(sounds_path+section_id+".mp3",false);
+  // AppMobi.player.watchAudioCurrentTime(function(){
+  //   console.log('Audio Current Time: ' + AppMobi.player.audioInfo.currentTime);
+  // },1000);
 }
 
 function stop_sound (panel) {
